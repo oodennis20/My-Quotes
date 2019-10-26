@@ -1,9 +1,13 @@
 <div>
     <h1>Quotes</h1>
     <ul>
-      <li *ngFor='let quote of quotes'>
-        {{quote.name}}
-      </li>
+      <div *ngFor='let quote of quotes;let i = index'>
+        <li> {{quote.name}} </li>
+        <button (click)='toggleDetails(i)'>Details..</button>
+      
+     
+        <app-quote-detail *ngIf='quote.showDetails' [quote]='quote'></app-quote-detail>
+      </div>
     </ul>
     <p *ngIf='quotes.length > 6'>You have too many quotes</p>
   </div>
