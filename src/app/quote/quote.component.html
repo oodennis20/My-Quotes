@@ -1,12 +1,13 @@
-<div>
+
     <h1>Quotes</h1>
     <ul>
+    <div>
       <div *ngFor='let quote of quotes;let i = index'>
-        <li> {{quote.name}} </li>
+        <li appStrikethrough>{{quote.name}} submitted on: {{quote.completeDate|date} </li>
         <button (click)='toggleDetails(i)'>Details..</button>
       
-        <app-quote-detail *ngIf='quote.showDetails' [quote]='quote' (isDeleteQuote) = 'deleteQuote($event,i)'></app-quote-detail>
+        <app-quote-detail *ngIf='quote.showDetails' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
       </div>
     </ul>
+  </div>
     <p *ngIf='quotes.length > 6'>Too many quotes</p>
-</div>
