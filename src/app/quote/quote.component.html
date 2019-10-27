@@ -5,9 +5,8 @@
         <li> {{quote.name}} </li>
         <button (click)='toggleDetails(i)'>Details..</button>
       
-     
-        <app-quote-detail *ngIf='quote.showDetails' [quote]='quote'></app-quote-detail>
+        <app-quote-detail *ngIf='quote.showDetails' [quote]='quote' (isDeleteQuote) = 'deleteQuote($event,i)'></app-quote-detail>
       </div>
     </ul>
-    <p *ngIf='quotes.length > 6'>You have too many quotes</p>
-  </div>
+    <p *ngIf='quotes.length > 6'>Too many quotes</p>
+</div>
