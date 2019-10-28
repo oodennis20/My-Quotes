@@ -12,16 +12,16 @@
             <!--the quote-->
             <div class="form-group">
                 <label for="description">Quote</label>
-                <input type="text" class="form-control" id="description" rows="5" [(ngModel)]="newQuote.quote" name="quote" #description="ngModel" required>
-                <div [hidden]="description.valid || description.pristine" class="alert alert-warning">
+                <input type="text" class="form-control" id="description" rows="5" [(ngModel)]="newQuote.details" name="quote" #quote="ngModel" required>
+                <div [hidden]="quote.valid || quote.pristine" class="alert alert-warning">
                     <p>Quote Required</p>
                 </div>
             </div>
             <!--who submitted the quote  -->
             <div class="form-group">
                 <label for="submitter">Submitted By:</label>
-                <textarea class="form-control" id="submitter" rows="1" [(ngModel)]="newQuote.submitter" name="submitter" #description="ngModel" required></textarea>
-                <div [hidden]="description.valid || description.pristine" class="alert alert-warning">
+                <textarea class="form-control" id="submitter" rows="1" [(ngModel)]="newQuote.submitter" name="submitter" #submitter="ngModel" required></textarea>
+                <div [hidden]="submitter.valid || submitter.pristine" class="alert alert-warning">
                 <p> Please add your name</p>
         
                 </div>

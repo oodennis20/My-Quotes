@@ -14,21 +14,23 @@ export class QuoteComponent implements OnInit {
    new Quote(3, 'General Colin Powell', 'There is no secret way to success. It is the result of preparation, hardwork, and learning from failure', 'admin', new Date(1959,9,25)),
     new Quote(4, 'Maya Angelou','If you are always trying to be normal you will never know how amazing you can be', 'admin', new Date(2013,9,26)),
   ];
-  
+  showDetails: boolean;
+  showQuote: any;
 
-  addNewQuote(quote) {
+  addNewQuote(quote: Quote) {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength + 1;
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
 
-  toggleQuote() {
+  toggleDetails() {
     this.showDetails = !this.showDetails;//show or hide content
     
   }
 
-  deleteQuote(isComplete, index){
+
+  deleteQuote(isComplete: any, index: number){
     if (isComplete) {
       let toDelete = confirm(`Are you sure you want to delete this Quote?`)
 
