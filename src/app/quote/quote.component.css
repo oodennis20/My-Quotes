@@ -59,6 +59,7 @@
     font-variant: small-caps;
     font-size: 13px;
 }
-.container {
-    
+.main {
+    background-image: url('/assets/three.jpg');
+
 }
