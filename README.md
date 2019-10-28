@@ -2,27 +2,37 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
 
-## Development server
+## Quotes Developer
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Dennis Otieno
 
-## Code scaffolding
+## Project name
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+MyQuotes
 
-## Build
+## Description
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+This is an angular app for generating and saving new quotes, voting for and deleting them.
 
-## Running unit tests
+## Specifications
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This app creates a new quote.
 
-## Running end-to-end tests
+You can vote as well as see when the quote was published.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+It allows the user to delete a quote.
 
-## Further help
+## Setup/Installation Requirements
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# My-Quotes
+nternet connection
+
+Angular and node installations
+
+## Technologies used
+
+Angular, HTML, CSS, Bootstrap.
+
+## License and terms of use
+MIT Licence the applications source code is free for any open source project
+
+©Dennis Otieno 2019 | Moringa School
