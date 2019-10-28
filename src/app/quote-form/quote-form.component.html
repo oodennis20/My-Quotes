@@ -12,8 +12,8 @@
             <!--the quote-->
             <div class="form-group">
                 <label for="description">Quote</label>
-                <input type="text" class="form-control" id="description" rows="5" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
-                <div [hidden]="name.valid || name.pristine" class="alert alert-warning">
+                <input type="text" class="form-control" id="description" rows="5" [(ngModel)]="newQuote.quote" name="quote" #description="ngModel" required>
+                <div [hidden]="description.valid || description.pristine" class="alert alert-warning">
                     <p>Quote Required</p>
                 </div>
             </div>

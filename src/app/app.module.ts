@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
+import { HighlightDirective } from './highlight.directive';
 import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
@@ -18,7 +19,8 @@ import { VoteComponent } from './vote/vote.component';
     StrikethroughDirective,
     DateCountPipe,
     QuoteFormComponent,
-    VoteComponent
+    VoteComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

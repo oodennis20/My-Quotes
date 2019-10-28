@@ -14,7 +14,7 @@ export class QuoteComponent implements OnInit {
    new Quote(3, 'General Colin Powell', 'There is no secret way to success. It is the result of preparation, hardwork, and learning from failure', 'admin', new Date(1959,9,25)),
     new Quote(4, 'Maya Angelou','If you are always trying to be normal you will never know how amazing you can be', 'admin', new Date(2013,9,26)),
   ];
-  showDetails= false;
+  
 
   addNewQuote(quote) {
     let quoteLength = this.quotes.length;
@@ -25,6 +25,7 @@ export class QuoteComponent implements OnInit {
 
   toggleQuote() {
     this.showDetails = !this.showDetails;//show or hide content
+    
   }
 
   deleteQuote(isComplete, index){
