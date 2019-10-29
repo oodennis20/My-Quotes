@@ -30,7 +30,7 @@ return(b.upVote) as any - (a.downVote) as any;
     });
   }
 
-  toggleDetails() {
+  toggleDetails(index) {
     this.showDetails = !this.showDetails;//show or hide content
     
   }
